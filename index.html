@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -24,6 +26,81 @@
             </div>
         </div>
     </div>
+    <div class="container">
+    <!-- Modal Trigger -->
+         <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">SEE EVENTS</a>
+    <!-- Modal Structure -->
+  <div id="demo-modal" class="modal">
+        <div class="modal-content">
+          <h3>Events</h3>
+            <ul class = "collection"> 
+                <li class = "collection-item">
+                    <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                    <span class = "title">Event Name</span>
+                    <p>
+                        "Time of Event"
+                        <br>
+                        "Event Description              
+                        "
+                    </p>
+                    <a href="#!" class = "secondary-content">
+                        <i class="material-icons">grade</i>
+                    </a>
+                </li>
+                <li class = "collection-item">
+                        <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                        <span class = "title">Event Name</span>
+                        <p>
+                            "Time of Event"
+                            <br>
+                            "Event Description              
+                            "
+                        </p>
+                        <a href="#!" class = "secondary-content">
+                            <i class="material-icons">grade</i>
+                        </a>
+                    </li>
+                    <li class = "collection-item">
+                            <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                            <span class = "title">Event Name</span>
+                            <p>
+                                "Time of Event"
+                                <br>
+                                "Event Description              
+                                "
+                            </p>
+                            <a href="#!" class = "secondary-content">
+                                <i class="material-icons">grade</i>
+                            </a>
+                        </li>
+                        <li class = "collection-item">
+                                <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                                <span class = "title">Event Name</span>
+                                <p>
+                                    "Time of Event"
+                                    <br>
+                                    "Event Description              
+                                    "
+                                </p>
+                                <a href="#!" class = "secondary-content">
+                                    <i class="material-icons">grade</i>
+                                </a>
+                            </li>
+
+            </ul>
+
+
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $('.modal').modal();
+      })
+    </script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
