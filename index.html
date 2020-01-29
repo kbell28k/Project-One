@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>AWESOME APP NAME</title>
+    <link rel="icon" href="logo.png" type="image/gif" sizes="20x20">
 </head>
 
 <style>
@@ -20,16 +23,23 @@
 
 <header>
     <nav>
-        <div class="nav-wrapper teal lighten-2">
-            <a href="#" class="brand-logo center">AWESOME APP NAME</a>
+        <div class="nav-wrapper grey lighten-3">
+          <a href="#" class="brand-logo"><img src="logo.png"></a> 
+          <ul id="nav-mobile " class="right hide-on-med-and-down ">
+            <li><a class= "black-text " href="sass.html">About</a></li>
+            <li><a class= "black-text " href="badges.html">Guide</a></li>
+            <li><a class= "black-text " href="collapsible.html">Contact</a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 </header>
 
 <body>
     
     <br><br>
 
+<<<<<<< HEAD
+=======
     <div class="container">
 
         <div class="row">
@@ -63,83 +73,101 @@
         </div>
             
     </div>
+
+    <!-- Card Template-->
     <div class="container">
-    <!-- Modal Trigger -->
-         <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">SEE EVENTS</a>
-    <!-- Modal Structure -->
-  <div id="demo-modal" class="modal">
-        <div class="modal-content">
-          <h3>Events</h3>
-            <ul class = "collection"> 
-                <li class = "collection-item">
-                    <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
-                    <span class = "title">Event Name</span>
-                    <p>
-                        "Time of Event"
-                        <br>
-                        "Event Description              
-                        "
-                    </p>
-                    <a href="#!" class = "secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class = "collection-item">
-                        <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
-                        <span class = "title">Event Name</span>
-                        <p>
-                            "Time of Event"
-                            <br>
-                            "Event Description              
-                            "
-                        </p>
-                        <a href="#!" class = "secondary-content">
-                            <i class="material-icons">grade</i>
-                        </a>
-                    </li>
-                    <li class = "collection-item">
-                            <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
-                            <span class = "title">Event Name</span>
-                            <p>
-                                "Time of Event"
-                                <br>
-                                "Event Description              
-                                "
-                            </p>
-                            <a href="#!" class = "secondary-content">
-                                <i class="material-icons">grade</i>
-                            </a>
-                        </li>
-                        <li class = "collection-item">
-                                <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
-                                <span class = "title">Event Name</span>
-                                <p>
-                                    "Time of Event"
-                                    <br>
-                                    "Event Description              
-                                    "
-                                </p>
-                                <a href="#!" class = "secondary-content">
-                                    <i class="material-icons">grade</i>
-                                </a>
-                            </li>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="rock.jpg" alt="Rock" style="width:300px;height:300px;">
+                    <span class="card-title">Silver Dollar Room</span>
+                   
+                        <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
+                        but the combination music venue and bar can throw a heck of a homemade show.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="container">
+                            <!-- Modal Trigger -->
+                                 <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">SEE EVENTS</a>
+                            <!-- Modal Structure -->
+                          <div id="demo-modal" class="modal">
+                                <div class="modal-content">
+                                  <h3>Events</h3>
+                                    <ul class = "collection"> 
+                                        <li class = "collection-item">
+                                            <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                                            <span class = "title">Event Name</span>
+                                            <p>
+                                                "Time of Event"
+                                                <br>
+                                                "Event Description              
+                                                "
+                                            </p>
+                                            <a href="#!" class = "secondary-content">
+                                                <i class="material-icons">grade</i>
+                                            </a>
+                                        </li>
+                                        <li class = "collection-item">
+                                                <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                                                <span class = "title">Event Name</span>
+                                                <p>
+                                                    "Time of Event"
+                                                    <br>
+                                                    "Event Description              
+                                                    "
+                                                </p>
+                                                <a href="#!" class = "secondary-content">
+                                                    <i class="material-icons">grade</i>
+                                                </a>
+                                            </li>
+                                            <li class = "collection-item">
+                                                    <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                                                    <span class = "title">Event Name</span>
+                                                    <p>
+                                                        "Time of Event"
+                                                        <br>
+                                                        "Event Description              
+                                                        "
+                                                    </p>
+                                                    <a href="#!" class = "secondary-content">
+                                                        <i class="material-icons">grade</i>
+                                                    </a>
+                                                </li>
+                                                <li class = "collection-item">
+                                                        <img src = "./images/pexels-photo-976863.jpeg" alt class = "circle" height="42" width="52">
+                                                        <span class = "title">Event Name</span>
+                                                        <p>
+                                                            "Time of Event"
+                                                            <br>
+                                                            "Event Description              
+                                                            "
+                                                        </p>
+                                                        <a href="#!" class = "secondary-content">
+                                                            <i class="material-icons">grade</i>
+                                                        </a>
+                                                    </li>
+                        
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+                                </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            </ul>
-
-
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
-        </div>
-      </div>
-    </div>
     <script>
     $(document).ready(function(){
         $('.modal').modal();
       })
     </script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>
