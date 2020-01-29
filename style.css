@@ -48,3 +48,12 @@
     transform: rotateY(180deg);
     font-family: 'Lobster', cursive;
   }
+  .brand-logo {
+    margin-top:-70px;
+    margin-left:30px;
+  }
+.right {
+    color:black;
+    margin-right:30px;
+    
+  }
