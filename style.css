@@ -1,61 +1,21 @@
-
-
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* 3D effect */
+.card {
+width: 50%;
+height: 30%;
 }
 
-.card-title {
-font-family: 'Lobster', cursive;
-font-size:30px;
+.model-content {
+  height: 40%;
+  width: 80%;
 }
 
-/* Front and Back Side positions */
-.flip-card-inner {
+.img {
+  height: 20%;
+  width: 20%;
+  float: left;
+  position: fixed;
+}
+
+.event-info {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Front side Styling (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Back side Styling */
-.flip-card-back {
-  background-color: white;
-  color:black;
-  transform: rotateY(180deg);
-  font-family: 'Lobster', cursive;
-}
-.brand-logo {
-  margin-top:-70px;
-  margin-left:30px;
-}
-.right {
-  color:black;
-  margin-right:30px;
-  
+  padding-left: 25%;
 }
