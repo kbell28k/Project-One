@@ -1,6 +1,5 @@
 #myDiv {
   display: none !important;
-<<<<<<< HEAD
 }
 
 .model-content {
@@ -38,32 +37,7 @@ body {
 
 main {
   flex: 1 0 auto;
-=======
-}
 
-.model-content {
-  height: 40%;
-  width: 80%;
-}
-
-.img {
-  height: 20%;
-  width: 20%;
-  float: left;
-  position: fixed;
-}
-
-.event-info {
-  position: relative;
-  padding-left: 25%;
-}
-
-.about-paragraph {
-  margin-top: 10%;
-  padding: 10%;
-  background-color: lightgray;
-  text-align: center;
-  border: black;
 }
 
 .page-footer{
@@ -72,7 +46,6 @@ bottom: 0;
 margin: 0 auto;
 width: 100%;
 text-align: center;
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
 }
 
 .about-footer {
@@ -105,4 +78,13 @@ h4 {
 
 #centerText {
   text-align: center;
+}
+
+#footer-text{
+  text-align: center;
+}
+
+.content-wrap {
+  margin-top: 5%;
+  margin-left: 5%;
 }
