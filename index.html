@@ -13,8 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--External CSS Link -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>AWESOME APP NAME</title>
-    <link rel="icon" href="logo.png" type="image/gif" sizes="20x20">
+    <title>VibeStreet</title>
 </head>
 
 <style>
@@ -23,12 +22,9 @@
 
 <header>
     <nav>
-        <div class="nav-wrapper black lighten-3">
-          <a href="#" class="brand-logo"><img src="#">VibeStreet</a> 
+        <div class="nav-wrapper grey lighten-3">
+          <a href="#" class="brand-logo"><img src="logo.png"></a> 
           <ul id="nav-mobile " class="right hide-on-med-and-down ">
-            <li><a class= "grey-text " href="sass.html">About</a></li>
-            <li><a class= "grey-text " href="badges.html">Guide</a></li>
-            <li><a class= "grey-text " href="collapsible.html">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -39,10 +35,8 @@
     <br><br>
 
     <div class="container">
-
         <div class="row">
-            <form class="col s4 border">
-                
+            <form class="col s4 border" style="background-color:black; padding: 30px">   
                 <div class="row">
                 <label>Select City</label>
                 <select class="browser-default">
@@ -68,7 +62,7 @@
                     </select>
                     </div>
                 <div class="row">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <button id="show"  class="btn waves-effect waves-light" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                       </button>
                 </div>
@@ -77,11 +71,12 @@
             
     </div>
 <!-- Card Re-format Test-->
+<div id ="myDIV" class = "container">
 <div class="row">
-  <div class="col s12 m6">
-  <div class="card">
+  <div class="col s3">
+  <div class = "card">
   <div class="card-image">
-  <img src="./rock.jpg">
+  <img src="./images/rock.jpg">
   <span class="card-title">Silver Dollar Room</span>
  <!-- Replace this button on the card with the modal--> 
  <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
@@ -93,7 +88,10 @@
          <h3>Events</h3>
          <ul class = "collection"> 
              <li class = "collection-item">
-                 <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle responsive-img">
+                 <div class = "img">
+                 <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                </div>
+                <div class = "event-info">
                  <span class = "title">Event Name</span>
                  <p>
                  "Time of Event"
@@ -103,43 +101,40 @@
                  <a href="#!" class = "secondary-content">
                  
          </a>
-             </li>
-             <li class = "collection-item">
-                 <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle responsive-img">
-                 <span class = "title">Event Name</span>
-                 <p>
-                 "Time of Event"
-                 <br>
-                 "Event Description"
-                 </p>
-                 <a href="#!" class = "secondary-content">
-                 
-                 </a>
-             </li>
-             <li class = "collection-item">
-                 <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle responsive-img">
-                 <span class = "title">Event Name</span>
-                 <p>
-                 "Time of Event"
-                 <br>
-                 "Event Description"
-                 </p>
-                 <a href="#!" class = "secondary-content">
-                 
-                 </a>
-             </li>
-             <li class = "collection-item">
-                 <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle responsive-img">
-                 <span class = "title">Event Name</span>
-                 <p>
-                 "Time of Event"
-                 <br>
-                 "Event Description"
-                 </p>
-                 <a href="#!" class = "secondary-content">
-                 
-                 </a>
-             </li>          
+        </div>
+        </li> 
+        <li class = "collection-item">
+                <div class = "img">
+                <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+               </div>
+               <div class = "event-info">
+                <span class = "title">Event Name</span>
+                <p>
+                "Time of Event"
+                <br>
+                "Event Description"
+                </p>
+                <a href="#!" class = "secondary-content">
+                
+        </a>
+       </div>
+       </li>
+       <li class = "collection-item">
+            <div class = "img">
+            <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+           </div>
+           <div class = "event-info">
+            <span class = "title">Event Name</span>
+            <p>
+            "Time of Event"
+            <br>
+            "Event Description"
+            </p>
+            <a href="#!" class = "secondary-content">
+            
+    </a>
+   </div>
+   </li>        
          </ul>
      </div>
      <div class="modal-footer">
@@ -150,28 +145,258 @@
                 <div class="card-content">
                   <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
                         but the combination music venue and bar can throw a heck of a homemade show.</p>
-                </div>
+    </div>
+    </div>
+    </div> 
+    <div class="col s3">
+            <div class = "card">
+            <div class="card-image">
+            <img src="./images/rock.jpg">
+            <span class="card-title">Silver Dollar Room</span>
+           <!-- Replace this button on the card with the modal--> 
+           <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+           <!-- Modal Trigger -->
+           <a class="waves-effect waves-light btn-floating halfway-fab teal lighten-1 modal-trigger" href="#demo-modal"><i class="material-icons">add</i></a>
+           <!-- Modal Structure -->
+               <div id="demo-modal" class="modal">
+                   <div class="modal-content">
+                   <h3>Events</h3>
+                   <ul class = "collection"> 
+                       <li class = "collection-item">
+                           <div class = "img">
+                           <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                          </div>
+                          <div class = "event-info">
+                           <span class = "title">Event Name</span>
+                           <p>
+                           "Time of Event"
+                           <br>
+                           "Event Description"
+                           </p>
+                           <a href="#!" class = "secondary-content">
+                           
+                   </a>
+                  </div> 
+                  </li>
+                  <li class = "collection-item">
+                        <div class = "img">
+                        <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                       </div>
+                       <div class = "event-info">
+                        <span class = "title">Event Name</span>
+                        <p>
+                        "Time of Event"
+                        <br>
+                        "Event Description"
+                        </p>
+                        <a href="#!" class = "secondary-content">
+                        
+                </a>
+               </div>
+               </li>
+               <li class = "collection-item">
+                    <div class = "img">
+                    <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                   </div>
+                   <div class = "event-info">
+                    <span class = "title">Event Name</span>
+                    <p>
+                    "Time of Event"
+                    <br>
+                    "Event Description"
+                    </p>
+                    <a href="#!" class = "secondary-content">
+                    
+            </a>
+           </div>
+           </li>        
+                   </ul>
+               </div>
+               <div class="modal-footer">
+               <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+               </div>
+               </div>
+                          </div>
+                          <div class="card-content">
+                            <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
+                                  but the combination music venue and bar can throw a heck of a homemade show.</p>
               </div>
-            </div>
-          </div>
+              </div>
+              </div> 
+              <div class="col s3">
+                    <div class = "card">
+                    <div class="card-image">
+                    <img src="./images/rock.jpg">
+                    <span class="card-title">Silver Dollar Room</span>
+                   <!-- Replace this button on the card with the modal--> 
+                   <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+                   <!-- Modal Trigger -->
+                   <a class="waves-effect waves-light btn-floating halfway-fab teal lighten-1 modal-trigger" href="#demo-modal"><i class="material-icons">add</i></a>
+                   <!-- Modal Structure -->
+                       <div id="demo-modal" class="modal">
+                           <div class="modal-content">
+                           <h3>Events</h3>
+                           <ul class = "collection"> 
+                               <li class = "collection-item">
+                                   <div class = "img">
+                                   <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                                  </div>
+                                  <div class = "event-info">
+                                   <span class = "title">Event Name</span>
+                                   <p>
+                                   "Time of Event"
+                                   <br>
+                                   "Event Description"
+                                   </p>
+                                   <a href="#!" class = "secondary-content">
+                                   
+                           </a>
+                          </div>  
+                          </li>
+                          <li class = "collection-item">
+                                <div class = "img">
+                                <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                               </div>
+                               <div class = "event-info">
+                                <span class = "title">Event Name</span>
+                                <p>
+                                "Time of Event"
+                                <br>
+                                "Event Description"
+                                </p>
+                                <a href="#!" class = "secondary-content">
+                                
+                        </a>
+                       </div>
+                       </li>
+                       <li class = "collection-item">
+                            <div class = "img">
+                            <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                           </div>
+                           <div class = "event-info">
+                            <span class = "title">Event Name</span>
+                            <p>
+                            "Time of Event"
+                            <br>
+                            "Event Description"
+                            </p>
+                            <a href="#!" class = "secondary-content">
+                            
+                    </a>
+                   </div>
+                   </li>       
+                           </ul>
+                       </div>
+                       <div class="modal-footer">
+                       <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+                       </div>
+                       </div>
+                                  </div>
+                                  <div class="card-content">
+                                    <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
+                                          but the combination music venue and bar can throw a heck of a homemade show.</p>
+                      </div>
+                      </div>
+                      </div> 
+                      <div class="col s3">
+                            <div class = "card">
+                            <div class="card-image">
+                            <img src="./images/rock.jpg">
+                            <span class="card-title">Silver Dollar Room</span>
+                           <!-- Replace this button on the card with the modal--> 
+                           <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+                           <!-- Modal Trigger -->
+                           <a class="waves-effect waves-light btn-floating halfway-fab teal lighten-1 modal-trigger" href="#demo-modal"><i class="material-icons">add</i></a>
+                           <!-- Modal Structure -->
+                               <div id="demo-modal" class="modal">
+                                   <div class="modal-content">
+                                   <h3>Events</h3>
+                                   <ul class = "collection"> 
+                                       <li class = "collection-item">
+                                           <div class = "img">
+                                           <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                                          </div>
+                                          <div class = "event-info">
+                                           <span class = "title">Event Name</span>
+                                           <p>
+                                           "Time of Event"
+                                           <br>
+                                           "Event Description"
+                                           </p>
+                                           <a href="#!" class = "secondary-content">
+                                           
+                                   </a>
+                                  </div> 
+                                  </li>
+                                  <li class = "collection-item">
+                                        <div class = "img">
+                                        <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                                       </div>
+                                       <div class = "event-info">
+                                        <span class = "title">Event Name</span>
+                                        <p>
+                                        "Time of Event"
+                                        <br>
+                                        "Event Description"
+                                        </p>
+                                        <a href="#!" class = "secondary-content">
+                                        
+                                </a>
+                               </div>
+                               </li>
+                               <li class = "collection-item">
+                                    <div class = "img">
+                                    <img src = "./images/photo-1429962714451-bb934ecdc4ec.jpeg" class = "circle-responsive-img">
+                                   </div>
+                                   <div class = "event-info">
+                                    <span class = "title">Event Name</span>
+                                    <p>
+                                    "Time of Event"
+                                    <br>
+                                    "Event Description"
+                                    </p>
+                                    <a href="#!" class = "secondary-content">
+                                    
+                            </a>
+                           </div>
+                           </li>        
+                                   </ul>
+                               </div>
+                               <div class="modal-footer">
+                               <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+                               </div>
+                               </div>
+                                          </div>
+                                          <div class="card-content">
+                                            <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
+                                                  but the combination music venue and bar can throw a heck of a homemade show.</p>
+                              </div>
+                              </div>
+                              </div>                  
+            </div> 
+                                          
+              </div> 
+    
+</div> 
  
-<footer class="page-footer black">
-        <div class="footer-copyright">
-            <div class = "center-align">
-        © 2014 Copyright Text
-        </div>
+<footer class="page-footer grey lighten-3">
+        <div class="footer-copyright center-align grey lighten-3">
+       
         </div>
         </footer>
 
     <script>
     $(document).ready(function(){
         $('.modal').modal();
+
+$("#show").on("click",function(){
+  $("#myDIV").show();
+});
       })
     </script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 </body>
 
 </html>
