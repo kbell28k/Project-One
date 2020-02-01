@@ -74,3 +74,35 @@ width: 100%;
 text-align: center;
 >>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
 }
+
+.about-footer {
+
+  position:absolute;
+  bottom:0px;
+  margin: 0 auto;
+  width:100%;
+  text-align: center;
+  height:200px;
+}
+
+i {
+  padding:10px 0px 10px 0px;
+
+}
+
+.carousel {
+margin-top:-50px;
+}
+
+h4 {
+  margin-top:80px;
+  text-align: center;
+}
+
+.fab {
+  color:black;
+}
+
+#centerText {
+  text-align: center;
+}
