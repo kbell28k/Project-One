@@ -13,11 +13,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--External CSS Link -->
     <link rel="stylesheet" type="text/css" href="style.css">
-<<<<<<< HEAD
-    <title>VibeStreet</title>
-=======
     <title>AWESOME APP NAME</title>
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
+    <link rel="icon" href="logo.png" type="image/gif" sizes="20x20">
 </head>
 
 <style>
@@ -26,9 +23,12 @@
 
 <header>
     <nav>
-        <div class="nav-wrapper grey lighten-3">
-          <a href="#" class="brand-logo"><img src="logo.png"></a> 
+        <div class="nav-wrapper black lighten-3">
+          <a href="#" class="brand-logo"><img src="#">VibeStreet</a> 
           <ul id="nav-mobile " class="right hide-on-med-and-down ">
+            <li><a class= "grey-text " href="sass.html">About</a></li>
+            <li><a class= "grey-text " href="badges.html">Guide</a></li>
+            <li><a class= "grey-text " href="collapsible.html">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
                     </select>
                     </div>
                 <div class="row">
-                    <button id="show"  class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <button class="btn waves-effect waves-light" type="submit" name="action" onclick="toggle_visibility('myDIV');">Submit
                         <i class="material-icons right">send</i>
                       </button>
                 </div>
@@ -75,7 +75,7 @@
             
     </div>
 <!-- Card Re-format Test-->
-<div id ="myDIV" class = "container">
+<div id = "venue-cards" class = "container">
 <div class="row">
   <div class="col s3">
   <div class = "card">
@@ -145,17 +145,11 @@
      <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
      </div>
      </div>
-<<<<<<< HEAD
                 </div>
                 <div class="card-content">
                   <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
                         but the combination music venue and bar can throw a heck of a homemade show.</p>
     </div>
-=======
-            </div>
-                <div class="card-content black">     
-          </div>
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
     </div>
     </div> 
     <div class="col s3">
@@ -227,13 +221,9 @@
                </div>
                </div>
                           </div>
-<<<<<<< HEAD
                           <div class="card-content">
                             <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
                                   but the combination music venue and bar can throw a heck of a homemade show.</p>
-=======
-                          <div class="card-content black">
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
               </div>
               </div>
               </div> 
@@ -306,13 +296,9 @@
                        </div>
                        </div>
                                   </div>
-<<<<<<< HEAD
                                   <div class="card-content">
                                     <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
                                           but the combination music venue and bar can throw a heck of a homemade show.</p>
-=======
-                                  <div class="card-content black">
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
                       </div>
                       </div>
                       </div> 
@@ -385,52 +371,40 @@
                                </div>
                                </div>
                                           </div>
-<<<<<<< HEAD
                                           <div class="card-content">
                                             <p>Your Silver Dollar Room is one of the smaller venues on our list at a capacity of 300, 
                                                   but the combination music venue and bar can throw a heck of a homemade show.</p>
-=======
-                                          <div class="card-content black">
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
                               </div>
                               </div>
                               </div>                  
-            </div> 
-                                          
-              </div> 
-    
+                        </div>                          
+                     </div> 
 </div> 
  
-<<<<<<< HEAD
-<footer class="page-footer grey lighten-3">
-        <div class="footer-copyright center-align grey lighten-3">
-       
-=======
-<footer class="page-footer-index black">
+<footer class="page-footer black">
         <div class="footer-copyright">
             <div class = "center-align">
-        © 2020 Copyright Text
+        © 2014 Copyright Text
         </div>
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
         </div>
         </footer>
 
     <script>
     $(document).ready(function(){
         $('.modal').modal();
-
-$("#show").on("click",function(){
-  $("#myDIV").show();
-});
       })
     </script>
 
     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    // Event listener for all button elements
+    $("btn").on("click", function() {
+        $('#venue-cards').show()
+
+    }
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<<<<<<< HEAD
-=======
-    <script src="script.js"></script>
->>>>>>> fe3a3c1bc36edc79dc48413b1a2420d21c9e92d0
 </body>
 
 </html>
