@@ -74,3 +74,7 @@ function addMarker(map, event) {
   });
   marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
   console.log(marker);
+}
+
+
+
