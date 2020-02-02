@@ -1,8 +1,10 @@
 var page = 0;
 
 function getEvents(page) {
+
   $('#events-panel').show();
   $('#attraction-panel').hide();
+
   if (page < 0) {
     page = 0;
     return;
@@ -10,8 +12,10 @@ function getEvents(page) {
   if (page > 0) {
     if (page > getEvents.json.page.totalPages-1) {
       page=0;
+      return;
     }
   }
+  
   $.ajax({
     type:"GET",
     url:"https://app.ticketmaster.com/discovery/v2/events.json?apikey=UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK&size=4&page="+page,
@@ -19,13 +23,14 @@ function getEvents(page) {
     dataType: "json",
     success: function(json) {
           getEvents.json = json;
-              showEvents(json);
-           },
+  			  showEvents(json);
+  		   },
     error: function(xhr, status, err) {
-              console.log(err);
-           }
+  			  console.log(err);
+  		   }
   });
 }
+
 function showEvents(json) {
   var items = $('#events .list-group-item');
   items.hide();
@@ -52,34 +57,39 @@ function showEvents(json) {
     item=item.next();
   }
 }
+
 $('#prev').click(function() {
   getEvents(--page);
 });
+
 $('#next').click(function() {
   getEvents(++page);
 });
+
 function getAttraction(id) {
   $.ajax({
     type:"GET",
-    url:"https://app.ticketmaster.com/discovery/v2/attractions/"+id+".json?apikey=5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG",
+    url:"https://app.ticketmaster.com/discovery/v2/attractions/"+id+".json?apikey=UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK",
     async:true,
     dataType: "json",
     success: function(json) {
           showAttraction(json);
-           },
+  		   },
     error: function(xhr, status, err) {
-              console.log(err);
-           }
+  			  console.log(err);
+  		   }
   });
 }
+
 function showAttraction(json) {
   $('#events-panel').hide();
   $('#attraction-panel').show();
+  
   $('#attraction-panel').click(function() {
     getEvents(page);
   });
+  
   $('#attraction .list-group-item-heading').first().text(json.name);
   $('#attraction img').first().attr('src',json.images[0].url);
   $('#classification').text(json.classifications[0].segment.name + " - " + json.classifications[0].genre.name + " - " + json.classifications[0].subGenre.name);
 }
-getEvents(page);
