@@ -10,7 +10,7 @@ With so many options to choose from, you may often find yourself wondering about
 
 ### 🎸[VibeStreet Application](https://kbell28k.github.io/Project-One//events)
 
-### 📎[Project Presentation](https://kbell28k.github.io/Project-One//events)
+### 📎[Project Presentation](https://docs.google.com/presentation/d/1l7GWOBHeMPkWTHpEoa08809qpY3y1iBU4-UHiZSYH0Q/edit?usp=sharing)
 
 ## Tools Used
 
