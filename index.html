@@ -49,18 +49,13 @@
         <div class="row">
             <form class="col s6 border" style="background-color:black; padding: 30px">   
                 <div class="row">
-                <label>Select City</label>
-                <select class="browser-default">
+                <label><h4>Select City to view events within 20 Miles of city</h4></label>
+                <select class="browser-default" id="test" name="form_select" onchange="showCityDivs(this)">
+                    <option value="0">Select City</option>
                     <option value="1">Denver</option>
                     <option value="2">Chicago</option>
                     <option value="3">New York</option>
                 </select>
-                </div>
-                
-                <div class="row">
-                    <button id="show"  class="btn waves-effect waves-light" type="submit" name="action">Submit
-                        <i class="material-icons right">send</i>
-                      </button>
                 </div>
             </form>
 
@@ -69,18 +64,20 @@
         <div class="container">
             <div class="row">
                 <div class="col s4 border">
+
+                    <div id="hidden_div" style="display:none;"></div>
                     <!-- Denver -->
-                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="39.7243993,-104.9949312"></div>
+                    <div id="denDiv" style="display:none;" w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="39.7243993,-104.9949312"></div>
                 </div>
 
                 <div class="col s4 border">
                     <!-- Chicago -->
-                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="41.8102432,-87.6083984"></div>
+                    <div id="chiDiv" style="display:none;" w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="41.8102432,-87.6083984"></div>
                 </div>
 
                 <div class="col s4 border">
                     <!-- New York -->
-                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="40.7454530,-73.9992273"></div>
+                    <div id="nyDiv" style="display:none;" w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="40.7454530,-73.9992273"></div>
                 </div>
             </div>
         </div>
@@ -175,6 +172,7 @@ $("#show").on("click",function(){
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./script3.js"></script>
 
     <!-- Denver -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54&libraries=visualization,places" async defer></script>
