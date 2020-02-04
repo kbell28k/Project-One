@@ -24,5 +24,5 @@ With so many options to choose from, you may often find yourself wondering about
 👤 **Milena Mihneva**
 👤 **Joan Ramos**
 
-* Github: [@kbell28k](https://github.com/kbell28k)
+
 
