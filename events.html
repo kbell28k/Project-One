@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>VibeStreet</title>
+</head>
+
+<style>
+    body {background-image: url('https://vignette.wikia.nocookie.net/cyberpunk/images/f/f1/Nightcity2077.png/revision/latest?cb=20190610002244');}
+</style>
+
+<header>
+    <nav>
+        <div class="nav-wrapper grey lighten-3">
+          <a href="#" class="brand-logo"><img src="logo.png"></a> 
+          <ul id="nav-mobile " class="right hide-on-med-and-down ">
+            <li><a class= "grey-text " href="./index.html">Home</a></li>
+            <li><a class= "grey-text " href="./about.html">About</a></li>
+            <li><a class= "grey-text " href="./guide.html">Explore</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+
+<body>
+    
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <form class="col s4 border" style="background-color:black; padding: 30px">   
+                <div class="row">
+                <label>Select City</label>
+                <select class="browser-default">
+                    <option value="1">Denver</option>
+                    <option value="2">Chicago</option>
+                    <option value="3">New York</option>
+                </select>
+                <div></div>
+                <div class="row">
+                        <input placeholder="artist or  genre" id="keyword" type="text">
+             
+                </div>
+
+                </div>
+                
+                <div class="row">
+                    <button id="show"  class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                </div>
+            </form>
+        </div>
+            
+    </div>
+    <style>
+            #attraction-panel {
+              display:none;
+            }
+          </style>
+      
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        </head>
+      
+        <body>
+          <div class="container">
+
+            <div class="row" id="eventsbycity">
+
+</div>
+            </div>
+
+            
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+          <script src="./guide_script.js"></script>
+ 
+
+
+    <script>
+//  $(document).ready(function(){
+//        $('.modal').modal();
+
+//$("#show").on("click",function(){
+//  $("#myDIV").show();
+//});
+//  })
+    </script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./event_script.js"></script>
+</body>
+
+</html>

@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -29,7 +33,8 @@
         <div class="nav-wrapper grey lighten-3">
           <a href="#" class="brand-logo"><img src="logo.png"></a> 
           <ul id="nav-mobile " class="right hide-on-med-and-down ">
-            <li><a class= "grey-text " href="./index.html">Home</a></li>
+            <li><a class= "grey-text " href="./events.html">Home</a></li>
+            <li><a class= "grey-text " href="./index.html">Explore Maps</a></li>
             <li><a class= "grey-text " href="./about.html">About</a></li>
             <li><a class= "grey-text " href="./guide.html">Explore</a></li>
           </ul>
@@ -43,7 +48,7 @@
 
     <div class="container">
         <div class="row">
-            <form class="col s4 border" style="background-color:black; padding: 30px">   
+            <form class="col s6 border" style="background-color:black; padding: 30px">   
                 <div class="row">
                 <label>Select City</label>
                 <select class="browser-default">
@@ -59,9 +64,33 @@
                       </button>
                 </div>
             </form>
+
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s4 border">
+                    <!-- Denver -->
+                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="39.7243993,-104.9949312"></div>
+                </div>
+
+                <div class="col s4 border">
+                    <!-- Chicago -->
+                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="41.8102432,-87.6083984"></div>
+                </div>
+
+                <div class="col s4 border">
+                    <!-- New York -->
+                    <div w-type="map" w-tmapikey="UGdG4OgfnsYV1yqkgxQO8Q4jYUs9EKOK" w-googleapikey="AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="1" w-borderradius="4" w-radius="20" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-geoposition="off" w-source="ticketmaster" w-country="" w-latlong="40.7454530,-73.9992273"></div>
+                </div>
+            </div>
+        </div>
+        
             
     </div>
+
+    
+
     <style>
             #attraction-panel {
               display:none;
@@ -147,6 +176,20 @@ $("#show").on("click",function(){
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./script.js"></script>
+
+    <!-- Denver -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54&libraries=visualization,places" async defer></script>
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/map/1.0.0/lib/main-widget.js"></script>
+
+    <!-- Chicago -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54&libraries=visualization,places" async defer></script>
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/map/1.0.0/lib/main-widget.js"></script>
+
+    <!-- New York -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy1LkYafuQGu1173EBw2YswnwQi0NtF54&libraries=visualization,places" async defer></script>
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/map/1.0.0/lib/main-widget.js"></script>
+
+
 </body>
 
 </html>
